@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'pos',
+			'database'  => 'wpa8pos',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => 'mmlinks',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
