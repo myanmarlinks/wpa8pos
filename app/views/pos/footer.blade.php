@@ -1,1 +1,0 @@
-<h1>footer area</h1>
