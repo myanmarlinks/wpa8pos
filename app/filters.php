@@ -78,3 +78,14 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+Route::filter('sauth', function() {
+	if (Sentry::check())
+	{	
+		return View::make('pages.index');
+	} else {
+		Session::flash('error', 'You need to login.');
+		return Redirect::to('/');
+	}
+});
+
