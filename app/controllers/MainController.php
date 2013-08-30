@@ -27,7 +27,7 @@ class MainController extends BaseController {
 	public function logout() 
 	{
 		Sentry::logout();
-    	return Redirect::to('/');
+    	return Redirect::to('/login');
 	}
 
 }

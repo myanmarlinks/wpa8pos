@@ -18,7 +18,7 @@ class WelcomeController extends BaseController {
 		{
 			return View::make('pages.welcome');
 		} else {
-			return Redirect::to('/main');
+			return Redirect::to('/');
 		}
 	}
 

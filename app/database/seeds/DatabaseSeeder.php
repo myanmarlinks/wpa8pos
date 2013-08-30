@@ -69,7 +69,7 @@ class DatabaseSeeder extends Seeder {
 		    {         // Create theuser         
 		        $user = Sentry::getUserProvider()->create(array(
 		        'email'       => 'pos@mmpos.com',             
-		        'password'    => '123456',
+		        'password'    => 'test',
 		        'permissions' => array(                 
 		        'admin' => 1,             
 		        ),

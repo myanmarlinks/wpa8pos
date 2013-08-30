@@ -42,9 +42,3 @@ Route::get('/', array('before' => 'sauth', 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
 
-
-
-
-Route::get('/test', array('before' => 'sauth', function() {
-	return View::make('pages.test');
-}));
