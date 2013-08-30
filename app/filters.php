@@ -85,7 +85,7 @@ Route::filter('sauth', function() {
 		return View::make('pages.index');
 	} else {
 		Session::flash('error', 'You need to login.');
-		return Redirect::to('/');
+		return Redirect::to('/login');
 	}
 });
 

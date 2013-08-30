@@ -33,7 +33,7 @@
       </div>
       <div class="col-sm-4 col-md-4 col-lg-4">
         
-         {{ Form::open(array('url'=>'/', 'method' => 'post', 'role'=>'form'))}}
+         {{ Form::open(array('url'=>'/login', 'method' => 'post', 'role'=>'form'))}}
           <fieldset>
             <legend class="text-center">{{ Lang::get('langs.welcome') }}</legend>
               <div class="form-group">

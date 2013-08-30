@@ -24,8 +24,8 @@ if (Session::has('my.locale'))
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', 'WelcomeController@showWelcome');
-Route::post('/', 'WelcomeController@login');
+Route::get('/login', 'WelcomeController@showWelcome');
+Route::post('/login', 'WelcomeController@login');
 
 Route::get('/register', function() {
 	return View::make('pages.register');
@@ -38,7 +38,7 @@ Route::post('/register', 'WelcomeController@register');
 |--------------------------------------------------------------------------
 */
 
-Route::get('/main', array('before' => 'sauth', 'MainController@index'));
+Route::get('/', array('before' => 'sauth', 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
 
