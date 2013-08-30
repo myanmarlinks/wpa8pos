@@ -1,7 +1,7 @@
 <div id="sidebar">
 	<div class="panel-group" id="accordion">
 		<div class="panel panel-default">
-		  	<a href="#">
+		  	<a href="{{ URL::to('/') }}">
 			    <div class="panel-heading">
 			        <i class="icon-desktop"></i></span> Dashboard   
 			    </div>  
@@ -37,6 +37,47 @@
 				<li><a href="#" class="list-group-item">Tags</a></li>
 			</ul>
 		    
+		</div>
+
+		<div class="panel panel-default" id="report">
+		  	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+			    <div class="panel-heading">
+			        <i class="icon-file-text"></i> Reports    
+			    </div>
+			</a>
+		    <ul class="list-group panel-collapse collapse" id="collapseFour">
+				<li>
+					<a class="list-group-item accordion-toggle" data-toggle="collapse" data-parent="#report" href="#collapseRep1"> Product Report</a>
+
+				    <ul class="list-group collapse" id="collapseRep1">
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a class="list-group-item accordion-toggle" data-toggle="collapse" data-parent="#report" href="#collapseRep2"> Sales Report</a>
+
+				    <ul class="list-group collapse" id="collapseRep2">
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a class="list-group-item accordion-toggle" data-toggle="collapse" data-parent="#report" href="#collapseRep3"> Stock Report</a>
+
+				    <ul class="list-group collapse" id="collapseRep3">
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+					</ul>
+				</li>
+
+				
+			</ul>
 		</div>
 	</div>
 </div>

@@ -50,7 +50,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" ><i class="icon-user"></i> {{ $username }} <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="{{ URL::to('logout') }}">logout</a></li>
+                <li><a href="{{ URL::to('logout') }}"><i class="icon-signout"></i> logout</a></li>
               </ul>
             </li>
         </ul> 
