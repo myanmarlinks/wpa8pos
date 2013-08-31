@@ -92,3 +92,25 @@ Route::filter('logincheck', function(){
 	}
 });
 
+Route::filter('admincheck', function(){
+	if(Sentry::check()) {
+		try
+		{
+			$user = Sentry::getUser();
+    		$user = Sentry::getUserProvider()->findById($user->id);
+    		if (!$user->hasAccess('admin'))
+    		{
+        		Session::flash('error', 'You have no right to access!');
+        		return Redirect::back();
+    		}
+		}
+		catch (Cartalyst\Sentry\UserNotFoundException $e)
+		{
+    		Session::flash('error','User was not found.');
+    		return Redirect::back();
+		}	
+	} else {
+		return Redirect::to('/login');
+	}
+});
+
