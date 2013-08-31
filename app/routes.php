@@ -5,18 +5,17 @@
 |--------------------------------------------------------------------------
 */
 
-Route::get('/lang/{lang}', function($lang) {
-    Session::put('my.locale', $lang);
-    return Redirect::back();
-});
-
 if (Session::has('my.locale'))
 {
-    App::setLocale(Session::get('my.locale'));
+	App::setLocale(Session::get('my.locale'));
 } else {
 	App::setLocale('en');
 }
 
+Route::get('/lang/{lang}', function($lang) {
+    Session::put('my.locale', $lang);
+    return Redirect::back();
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +23,7 @@ if (Session::has('my.locale'))
 |--------------------------------------------------------------------------
 */
 
-Route::get('/login', 'WelcomeController@showWelcome');
+Route::get('/login', array('before' => 'logincheck', 'uses' => 'WelcomeController@showWelcome'));
 Route::post('/login', 'WelcomeController@login');
 
 Route::get('/register', function() {
@@ -38,7 +37,7 @@ Route::post('/register', 'WelcomeController@register');
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', array('before' => 'sauth', 'MainController@index'));
+Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
 

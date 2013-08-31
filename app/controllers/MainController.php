@@ -8,6 +8,7 @@ class MainController extends BaseController {
 	|--------------------------------------------------------------------------
 	*/
 
+
 	/**
 	 * Show Main Page
 	 * @author Naing Win
