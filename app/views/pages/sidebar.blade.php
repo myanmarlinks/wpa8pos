@@ -46,38 +46,39 @@
 			    </div>
 			</a>
 		    <ul class="list-group panel-collapse collapse" id="collapseFour">
-				<li>
-					<a class="list-group-item accordion-toggle" data-toggle="collapse" data-parent="#report" href="#collapseRep1"> Product Report</a>
+				<li >
+					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseFour" href="#report1"> 
+					Product Reports
+					</a>
 
-				    <ul class="list-group collapse" id="collapseRep1">
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+					<ul class="list-group collapse" id="report1">
+					  <li class="list-group-item"><a href="#"><i class="icon-circle-arrow-right"></i> report</a></li>
+					  <li class="list-group-item"><a href="#"><i class="icon-circle-arrow-right"></i> report</a></li>
+					</ul>
+				</li>
+				<li >
+					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseFour" href="#report2"> 
+					Sales Reports
+					</a>
+
+					<ul class="list-group collapse" id="report2">
+					  <li class="list-group-item"><a href="#"><i class="icon-circle-arrow-right"></i> report</a></li>
+					  <li class="list-group-item"><a href="#"><i class="icon-circle-arrow-right"></i> report</a></li>
 					</ul>
 				</li>
 
-				<li>
-					<a class="list-group-item accordion-toggle" data-toggle="collapse" data-parent="#report" href="#collapseRep2"> Sales Report</a>
+				<li >
+					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseFour" href="#report3"> 
+					Stock Reports
+					</a>
 
-				    <ul class="list-group collapse" id="collapseRep2">
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
+					<ul class="list-group collapse" id="report3">
+					  <li class="list-group-item"><a href="#"><i class="icon-circle-arrow-right"></i> report</a></li>
+					  <li class="list-group-item"><a href="#"><i class="icon-circle-arrow-right"></i> report</a></li>
 					</ul>
 				</li>
-
-				<li>
-					<a class="list-group-item accordion-toggle" data-toggle="collapse" data-parent="#report" href="#collapseRep3"> Stock Report</a>
-
-				    <ul class="list-group collapse" id="collapseRep3">
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
-						<li><a href="#" class="list-group-item"><i class="icon-chevron-right"></i>  </a></li>
-					</ul>
-				</li>
-
-				
 			</ul>
+		    
 		</div>
 	</div>
 </div>
