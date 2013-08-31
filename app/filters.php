@@ -80,11 +80,8 @@ Route::filter('csrf', function()
 });
 
 Route::filter('sauth', function() {
-	if (Sentry::check())
-	{	
-		return View::make('pages.index');
-	} else {
-		Session::flash('error', 'You need to login.');
+	if (! Sentry::check())
+	{
 		return Redirect::to('/login');
 	}
 });

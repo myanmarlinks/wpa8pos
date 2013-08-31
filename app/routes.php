@@ -38,7 +38,7 @@ Route::post('/register', 'WelcomeController@register');
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', array('before' => 'sauth', 'MainController@index'));
+Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
 

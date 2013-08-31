@@ -14,12 +14,9 @@ class WelcomeController extends BaseController {
 	 **/
 	public function showWelcome()
 	{
-		if (! Sentry::check())
-		{
+		
 			return View::make('pages.welcome');
-		} else {
-			return Redirect::to('/');
-		}
+		
 	}
 
 	/**
