@@ -28,7 +28,7 @@
 			    </div>
 			</a>
 		    <ul class="list-group panel-collapse collapse" id="collapseThree">
-				<li ><a href="#" class="list-group-item"> All Products</a></li>
+				<li ><a href="{{ Url::to('/all-products') }}" class="list-group-item"> All Products</a></li>
 				<li ><a href="#" class="list-group-item">Stock Control</a>	</li>
 				<li ><a href="#" class="list-group-item">Price Books</a></li>
 				<li><a href="#" class="list-group-item">Types</a></li>
