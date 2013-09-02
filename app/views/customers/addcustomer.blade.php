@@ -5,7 +5,7 @@
 	<div class="row" id="main_content">
 		<div class="col-sm-12 col-md-12 col-lg-12" id="customer">
 			
-				  <div class="col-md-6 col-md-offset-3">
+				  <div class="col-sm-6 col-md-6 col-lg-6">
 					{{ Form::open(array('url'=>'addcustomer', 'method' => 'post', 'class' => 'form-horizontal', 'role' => 'form')) }}
     
 
