@@ -6,7 +6,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-12" id="customer">
 			
 				  <div class="col-sm-6 col-md-6 col-lg-6">
-					{{ Form::open(array('url'=>'addcustomer', 'method' => 'post', 'class' => 'form-horizontal', 'role' => 'form')) }}
+					{{ Form::open(array('url'=>'add-customer', 'method' => 'post', 'class' => 'form-horizontal', 'role' => 'form')) }}
     
 
           				<div class="form-group">
@@ -31,9 +31,9 @@
           				</div>
 
 			          	<div class="form-group">
-			            	{{ Form::label('phone_no', 'Phone No:', array('class' => 'col-lg-4 control-label')) }} 
+			            	{{ Form::label('phone_number', 'Phone No:', array('class' => 'col-lg-4 control-label')) }} 
 			            	<div class="col-lg-8">
-			              		{{ Form::text('phone_no','', array('placeholder' => '', 'class' => 'form-control')) }}
+			              		{{ Form::text('phone_number','', array('placeholder' => '', 'class' => 'form-control')) }}
 			            	</div>
 			          	</div>
 
@@ -84,9 +84,9 @@
 			          	</div>
 			         
 			          	<div class="form-group">
-			            	{{ Form::label('comments', 'Comments:', array('class' => 'col-lg-4 control-label')) }} 
+			            	{{ Form::label('comment', 'Comments:', array('class' => 'col-lg-4 control-label')) }} 
 			            	<div class="col-lg-8">
-			              		{{ Form::textarea('comments','', array('placeholder' => '', 'class' => 'form-control')) }}
+			              		{{ Form::textarea('comment','', array('placeholder' => '', 'class' => 'form-control')) }}
 			            	</div>
 			          	</div>
 			  			

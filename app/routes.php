@@ -41,9 +41,14 @@ Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
+
+Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@index'));
+
 Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 
-
+Route::get('/add-customer', 'CustomerController@addCustomer');
+Route::post('/add-customer', 'CustomerController@createCustomer');
+Route::get('/all-customers', 'CustomerController@allCustomers');
 
 
 /*
@@ -51,7 +56,12 @@ Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductCo
 | For User Management
 |--------------------------------------------------------------------------
 */
+
 Route::get('/all-staffs', array('before' => 'admincheck', 'uses' => 'UserController@allStaffs'));
 
 Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@staff'));
 Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addStaff'));
+
+Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@index'));
+Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addUser'));
+
