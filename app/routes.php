@@ -41,3 +41,6 @@ Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
+Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@index'));
+
+Route::post('/addproduct','ProductController@addproduct');
