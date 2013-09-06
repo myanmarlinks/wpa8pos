@@ -7,8 +7,8 @@ class ProductController extends BaseController {
 		return View::make('product.index');
 	}
 
-<<<<<<< HEAD
-	public function addproduct(){
+	public function addproduct()
+	{
 		 $product =new Addproducts;
 				$product->product_name =\Input::get('product_name');
 				$product->categories=\Input::get('categories');
@@ -22,17 +22,7 @@ class ProductController extends BaseController {
 				$product->save();
 					 
 				 return View::make('product.index');
-
-		 
        }
 
        
-
-     
 }
-=======
-	public function addProduct() {
-		return View::make('product.addproduct');
-	}
-}
->>>>>>> 75b2a2fccea5b5ee5f017e4923cbe4a311159061

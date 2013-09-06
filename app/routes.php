@@ -44,11 +44,11 @@ Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductCo
 
 Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@index'));
 
-Route::post('/addproduct','ProductController@addproduct');
-
 Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 
-
+Route::get('/add-customer', 'CustomerController@addCustomer');
+Route::post('/add-customer', 'CustomerController@createCustomer');
+Route::get('/all-customers', 'CustomerController@allCustomers');
 
 
 /*

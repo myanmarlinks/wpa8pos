@@ -1,6 +1,5 @@
 <?php
-
-class Addsuppliers extends Eloquent
+class Supplier extends Eloquent
 {
   protected $table = 'suppliers';
 
