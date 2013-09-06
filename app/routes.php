@@ -51,5 +51,7 @@ Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductCo
 | For User Management
 |--------------------------------------------------------------------------
 */
-Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@index'));
-Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addUser'));
+Route::get('/all-staffs', array('before' => 'admincheck', 'uses' => 'UserController@allStaffs'));
+
+Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@staff'));
+Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addStaff'));

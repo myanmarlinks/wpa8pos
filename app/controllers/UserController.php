@@ -7,11 +7,19 @@
 	 **/
 
 class UserController extends BaseController {
-	public function index() {
-		return View::make('users.addstaff');
+
+	public function allStaffs() {
+
+		return View::make('staff.allstaffs');
+					
 	}
 
-	public function addUser() {
+
+	public function staff() {
+		return View::make('staff.addstaff');
+	}
+
+	public function addStaff() {
 
 	}
 }

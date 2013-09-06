@@ -49,8 +49,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-group"></i> Staff Manage<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="{{ URL::to('all-staffs') }}"><i class="icon-search"></i> All Staffs</a></li>
-                <li><a href="{{ URL::to('add-staff') }}"><i class="icon-expand-alt"></i> Add New</a></li>
-                <li><a href="{{ URL::to('add-staff') }}"><i class="icon-user"></i> Group</a></li>
+                <li><a href="{{ URL::to('group') }}"><i class="icon-user"></i> Group</a></li>
               </ul>
             </li>  
         </ul>    

@@ -73,3 +73,5 @@
     $('.carousel').carousel()
   </script>
 @stop
+
+
