@@ -41,11 +41,11 @@ Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
-<<<<<<< HEAD
+
 Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@index'));
 
 Route::post('/addproduct','ProductController@addproduct');
-=======
+
 Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 
 
@@ -58,4 +58,3 @@ Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductCo
 */
 Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@index'));
 Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addUser'));
->>>>>>> 75b2a2fccea5b5ee5f017e4923cbe4a311159061
