@@ -113,4 +113,3 @@ Route::filter('admincheck', function(){
 		return Redirect::to('/login');
 	}
 });
-

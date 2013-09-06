@@ -40,10 +40,10 @@ class WelcomeController extends BaseController {
 	        $userid = $user->id;
 	        $user = Sentry::getUserProvider()->findById($userid);
 	        $username = $user['first_name'] . ' ' . $user['last_name'];
-	        
+
 	        Session::flash('success', 'Your are successfully login' . ' ' . $username);
 	        return Redirect::to('/');
-	               
+
 	    }
 	    catch (Cartalyst\Sentry\Users\LoginRequiredException $e)
 	    {
@@ -84,7 +84,7 @@ class WelcomeController extends BaseController {
 	    }
 	}
 
-	
+
 	/**
 	 * Register
 	 * Authenticate with Sentry2

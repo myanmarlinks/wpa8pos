@@ -57,7 +57,11 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'wpos',
 			'username'  => 'root',
+<<<<<<< HEAD
 			'password'  => '',
+=======
+			'password'  => 'root',
+>>>>>>> 75b2a2fccea5b5ee5f017e4923cbe4a311159061
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
