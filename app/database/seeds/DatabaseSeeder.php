@@ -15,7 +15,6 @@ class DatabaseSeeder extends Seeder {
 		/**
 		 * admin group seed
 		 */
-		 $this->call('SuppliersSeeder');
 		try
 		    {
 		        // Create the group

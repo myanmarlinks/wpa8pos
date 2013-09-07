@@ -1,32 +1,47 @@
 <?php 
+
 class SupplierController extends BaseController {
-	public function index() {
-		return View::make('suppliers.index');
+	public function addSupplier()
+	{
+		return View::make('supplier.addsupplier');
 	}
 
-	public function suppliersbyname(){
-		  $users = User::all();
+	public function createSupplier() 
+	{	
 
-     }
-     public function addsuppliers(){
-		$suppliers =new Supplier;
-		$suppliers->company_name =\Input::get('company_name');
-		$suppliers->first_name=\Input::get('first_name');
-		$suppliers->last_name =\Input::get('last_name');
-		$suppliers->email =\Input::get('email');
-		$suppliers->phone_no =\Input::get('phone_no');
-		$suppliers->address_1 =\Input::get('address_1');
-		$suppliers->address_2 =\Input::get('address_2'); 
-		$suppliers->city =\Input::get('city');
-		$suppliers->state =\Input::get('state');
-		$suppliers->zip =\Input::get('zip');
-		$suppliers->country =\Input::get('country');
-		$suppliers->comment =\Input::get('comment');
-		$suppliers->account =\Input::get('account');
-		$suppliers->save();
-					 
-				 return View::make('supplier.index');
+		$rule =  array(
+			'first_name' => 'required',
+			'email'		 => 'email|required'
+			);
+		$cust = Input::all();
+		$valid = Validator::make($cust, $rule);
+		if($valid->fails()) {
+			return Redirect::to('add-supplier');
+		} else {
+			$supplier = new Supplier;
+			$supplier->company_name =Input::get('company_name');
+			$supplier->first_name= Input::get('first_name');
+			$supplier->last_name = Input::get('last_name');
+			$supplier->email = Input::get('email');
+			$supplier->phone_no = Input::get('phone_no');
+			$supplier->address_1 = Input::get('address_1');
+			$supplier->address_2 = Input::get('address_2'); 
+			$supplier->city = Input::get('city');
+			$supplier->state = Input::get('state');
+			$supplier->zip = Input::get('zip');
+			$supplier->country = Input::get('country');
+			$supplier->comment = Input::get('comment');
+			$supplier->account = Input::get('account');
+			$supplier->save();
 
-		 
-       }
+			return Redirect::to('all-suppliers');	
+		}
+		
+	}
+
+	public function allSuppliers()
+	{
+		$suppliers = Supplier::all()->toArray();
+		var_dump($suppliers);
+	}
 }
