@@ -24,5 +24,11 @@ class ProductController extends BaseController {
 				 return View::make('product.index');
        }
 
+    	public function products()
+	{
+		return View::make('product.products');
+	}
+
+
        
 }

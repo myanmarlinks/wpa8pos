@@ -40,11 +40,11 @@ Route::post('/register', 'WelcomeController@register');
 Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
-Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
+Route::get('/addproducts', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 
 Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@index'));
 
-Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
+Route::get('/products', array('before' => 'admincheck', 'uses' => 'ProductController@products'));
 
 Route::get('/add-customer', 'CustomerController@addCustomer');
 Route::post('/add-customer', 'CustomerController@createCustomer');
