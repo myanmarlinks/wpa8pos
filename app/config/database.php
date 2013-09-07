@@ -55,9 +55,13 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'wpa8-pos',
+			'database'  => 'wpa8pos',
 			'username'  => 'root',
+<<<<<<< HEAD
 			'password'  => 'mmlink',
+=======
+			'password'  => 'mmlinks',
+>>>>>>> 98b3939b07bf3da2f99127c188f2667f05dbbf78
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
