@@ -5,7 +5,7 @@
 		<div class="row" id="main_content">
 			<div class="col-sm-12 col-md-12 col-lg-12" id="supplier">
 				<div class="col-sm-6 col-md-6 col-lg-6">
-					{{ Form::open(array('url'=>'addsupplier', 'method' => 'post', 'class' => 'form-horizontal', 'role' => 'form')) }}
+					{{ Form::open(array('url'=>'add-supplier', 'method' => 'post', 'class' => 'form-horizontal', 'role' => 'form')) }}
         				<div class="form-group">
             				{{ Form::label('company_name', 'Company Name:', array('class' => 'col-lg-4 control-label')) }} 
             				<div class="col-lg-8">
@@ -35,15 +35,9 @@
           				</div>
 
 			          	<div class="form-group">
-<<<<<<< HEAD
-			            	{{ Form::label('phone_number, 'Phone Number:', array('class' => 'col-lg-4 control-label')) }} 
-			            	<div class="col-lg-8">
-			              		{{ Form::text('phone_number','', array('placeholder' => '', 'class' => 'form-control')) }}
-=======
 			            	{{ Form::label('phone_no', 'Phone No:', array('class' => 'col-lg-4 control-label')) }} 
 			            	<div class="col-lg-8">
 			              		{{ Form::text('phone_no','', array('placeholder' => '', 'class' => 'form-control')) }}
->>>>>>> 75b2a2fccea5b5ee5f017e4923cbe4a311159061
 			            	</div>
 			          	</div>
 
@@ -94,15 +88,9 @@
 			          	</div>
 			         
 			          	<div class="form-group">
-<<<<<<< HEAD
 			            	{{ Form::label('comment', 'Comments:', array('class' => 'col-lg-4 control-label')) }} 
 			            	<div class="col-lg-8">
 			              		{{ Form::textarea('comment','', array('placeholder' => '', 'class' => 'form-control')) }}
-=======
-			            	{{ Form::label('comments', 'Comments:', array('class' => 'col-lg-4 control-label')) }} 
-			            	<div class="col-lg-8">
-			              		{{ Form::textarea('comments','', array('placeholder' => '', 'class' => 'form-control')) }}
->>>>>>> 75b2a2fccea5b5ee5f017e4923cbe4a311159061
 			            	</div>
 			          	</div>
 			  			

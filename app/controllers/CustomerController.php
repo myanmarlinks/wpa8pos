@@ -6,7 +6,7 @@ Author: Chan Myae Aung
 class CustomerController extends BaseController {
 	public function addCustomer()
 	{
-		return View::make('customers.addcustomer');
+		return View::make('customer.addcustomer');
 	}
 
 	public function createCustomer() 
@@ -26,7 +26,7 @@ class CustomerController extends BaseController {
 			$customer->first_name= Input::get('first_name');
 			$customer->last_name = Input::get('last_name');
 			$customer->email = Input::get('email');
-			$customer->phone_number = Input::get('phone_number');
+			$customer->phone_no = Input::get('phone_no');
 			$customer->address_1 = Input::get('address_1');
 			$customer->address_2 = Input::get('address_2'); 
 			$customer->city = Input::get('city');
