@@ -57,15 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'wpa8pos',
 			'username'  => 'root',
-<<<<<<< HEAD
 			'password'  => 'root',
-=======
-<<<<<<< HEAD
-			'password'  => 'mmlink',
-=======
-			'password'  => 'mmlinks',
->>>>>>> 98b3939b07bf3da2f99127c188f2667f05dbbf78
->>>>>>> ada37351fcfaa3181be8c2630d02707f2f830ccc
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

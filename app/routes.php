@@ -40,15 +40,15 @@ Route::post('/register', 'WelcomeController@register');
 Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
-<<<<<<< HEAD
+
 Route::get('/addproducts', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
-=======
+
 /*
 |--------------------------------------------------------------------------
 | For Product
 |--------------------------------------------------------------------------
 */
->>>>>>> 6537550f33deb454d86e1d0c1474ac764bc13ecb
+
 
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
 
@@ -85,6 +85,4 @@ Route::get('/all-staffs', array('before' => 'admincheck', 'uses' => 'UserControl
 Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@staff'));
 Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addStaff'));
 
-Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@index'));
-Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addUser'));
 
