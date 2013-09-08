@@ -32,23 +32,58 @@
 				<li ><a href="{{ Url::to('/add-products') }}" class="list-group-item"> Add Products</a></li>
 				<li ><a href="#" class="list-group-item">Stock Control</a>	</li>
 				<li ><a href="#" class="list-group-item">Price Books</a></li>
-				<li><a href="#" class="list-group-item">Types</a></li>
-				<li><a href="#" class="list-group-item">Suppliers</a></li>			  
+				<li><a href="#" class="list-group-item">Types</a></li>			  
 				<li><a href="#" class="list-group-item">Brands</a></li>
 				<li><a href="#" class="list-group-item">Tags</a></li>
 			</ul>
 		    
 		</div>
 
-		<div class="panel panel-default" id="report">
+		<div class="panel panel-default">
 		  	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+			    <div class="panel-heading">
+			        <i class="icon-user"></i> Customers    
+			    </div>
+			</a>
+		    <ul class="list-group panel-collapse collapse" id="collapseFour">
+		    	<li ><a href="{{ Url::to('/all-customers') }}" class="list-group-item"> All Customers</a></li>
+				<li ><a href="{{ Url::to('/add-customer') }}" class="list-group-item"> Add Customer</a></li>
+		    </ul>
+		</div>
+		
+		<div class="panel panel-default">
+		  	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+			    <div class="panel-heading">
+			        <i class="icon-group"></i> Employees    
+			    </div>
+			</a>
+		    <ul class="list-group panel-collapse collapse" id="collapseFive">
+		    	<li ><a href="#" class="list-group-item"> All Employees</a></li>
+				<li ><a href="#" class="list-group-item"> Add Employee</a></li>
+		    </ul>
+		</div>
+
+		<div class="panel panel-default">
+		  	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+			    <div class="panel-heading">
+			        <i class="icon-user"></i> Suppliers    
+			    </div>
+			</a>
+		    <ul class="list-group panel-collapse collapse" id="collapseSix">
+		    	<li ><a href="{{ Url::to('/all-suppliers') }}" class="list-group-item"> All Suppliers</a></li>
+				<li ><a href="{{ Url::to('/add-supplier') }}" class="list-group-item"> Add Supplier</a></li>
+		    </ul>
+		</div>
+
+		<div class="panel panel-default" id="report">
+		  	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 			    <div class="panel-heading">
 			        <i class="icon-file-text"></i> Reports    
 			    </div>
 			</a>
-		    <ul class="list-group panel-collapse collapse" id="collapseFour">
+		    <ul class="list-group panel-collapse collapse" id="collapseSeven">
 				<li >
-					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseFour" href="#report1"> 
+					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseSeven" href="#report1"> 
 					Product Reports
 					</a>
 
@@ -58,7 +93,7 @@
 					</ul>
 				</li>
 				<li >
-					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseFour" href="#report2"> 
+					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseSeven" href="#report2"> 
 					Sales Reports
 					</a>
 
@@ -69,7 +104,7 @@
 				</li>
 
 				<li >
-					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseFour" href="#report3"> 
+					<a class="list-group-item accordion-toggle"  data-toggle="collapse" data-parent="#collapseSeven" href="#report3"> 
 					Stock Reports
 					</a>
 

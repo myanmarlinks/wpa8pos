@@ -10,7 +10,7 @@
               <!-- Table -->
               <table class="table">
                 <tr class="page-header">
-                  <th><input type="checkbox" class="checkbox.inline" name="products" value=""></th>
+                  <th><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></th>
                   <th>Product Name</th>
                   <th>Categories</th>
                   <th>Suppliers</th>
@@ -21,11 +21,11 @@
                   <th>Location</th>
                   <th>Description</th>
                   <th>Edit</th>
-                  <th>Delete All</th>
+                  <th>Delete</th>
                   
                 </tr>
                 <tr>
-                  <td><input type="checkbox" class="checkbox.inline" name="products" value="superCoffeemix"></td>
+                  <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Super Coffeemix</td>
                   <td>Coffee</td>
                   <td>Super</td>
@@ -39,7 +39,7 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" class="checkbox.inline" name="products" value="premiere"></td>
+                  <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Premiere</td>
                   <td>Coffee</td>
                   <td>Premiere</td>
@@ -53,7 +53,7 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" class="checkbox.inline" name="products" value="premiere"></td>
+                  <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Premiere</td>
                   <td>Coffee</td>
                   <td>Premiere</td>
@@ -67,7 +67,7 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
                 <tr>
-                   <td><input type="checkbox" class="checkbox.inline" name="products" value="premiere"></td>
+                   <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Premiere</td>
                   <td>Coffee</td>
                   <td>Premiere</td>
@@ -81,7 +81,7 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
                 <tr>
-                   <td><input type="checkbox" class="checkbox.inline" name="products" value="premiere"></td>
+                   <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Premiere</td>
                   <td>Coffee</td>
                   <td>Premiere</td>
@@ -95,7 +95,7 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
                 <tr>
-                   <td><input type="checkbox" class="checkbox.inline" name="products" value="supercoffeemix"></td>
+                   <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Super Coffeemix</td>
                   <td>Coffee</td>
                   <td>Super</td>
@@ -109,7 +109,7 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
                 <tr>
-                   <td><input type="checkbox" class="checkbox.inline" name="products" value="supercoffeemix"></td>
+                   <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Super Coffeemix</td>
                   <td>Coffee</td>
                   <td>Super</td>
@@ -123,7 +123,7 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
                 <tr>
-                   <td><input type="checkbox" class="checkbox.inline" name="products" value="premiere"></td>
+                   <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
                   <td>Premiere</td>
                   <td>Coffee</td>
                   <td>Premiere</td>

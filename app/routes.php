@@ -40,16 +40,39 @@ Route::post('/register', 'WelcomeController@register');
 Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
+<<<<<<< HEAD
+Route::get('/addproducts', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
+=======
+/*
+|--------------------------------------------------------------------------
+| For Product
+|--------------------------------------------------------------------------
+*/
+>>>>>>> 6537550f33deb454d86e1d0c1474ac764bc13ecb
+
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
 
-Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@index'));
+Route::get('/products', array('before' => 'admincheck', 'uses' => 'ProductController@products'));
 
-Route::get('/add-products', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
+/*
+|--------------------------------------------------------------------------
+| For Customer
+|--------------------------------------------------------------------------
+*/
 
 Route::get('/add-customer', 'CustomerController@addCustomer');
 Route::post('/add-customer', 'CustomerController@createCustomer');
 Route::get('/all-customers', 'CustomerController@allCustomers');
 
+/*
+|--------------------------------------------------------------------------
+| For Supplier
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/add-supplier', array('before' => 'admincheck', 'uses' => 'SupplierController@addSupplier'));
+Route::post('/add-supplier', array('before' => 'admincheck', 'uses' =>  'SupplierController@createSupplier'));
+Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@allSuppliers'));
 
 /*
 |--------------------------------------------------------------------------

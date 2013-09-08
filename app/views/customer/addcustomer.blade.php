@@ -31,9 +31,9 @@
           				</div>
 
 			          	<div class="form-group">
-			            	{{ Form::label('phone_number', 'Phone No:', array('class' => 'col-lg-4 control-label')) }} 
+			            	{{ Form::label('phone_no', 'Phone No:', array('class' => 'col-lg-4 control-label')) }} 
 			            	<div class="col-lg-8">
-			              		{{ Form::text('phone_number','', array('placeholder' => '', 'class' => 'form-control')) }}
+			              		{{ Form::text('phone_no','', array('placeholder' => '', 'class' => 'form-control')) }}
 			            	</div>
 			          	</div>
 
