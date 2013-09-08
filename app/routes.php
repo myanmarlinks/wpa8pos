@@ -40,16 +40,16 @@ Route::post('/register', 'WelcomeController@register');
 Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
-<<<<<<< HEAD
-Route::get('/addproducts', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
-=======
+
+Route::post('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@createProduct'));
+Route::get('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
+
 /*
 |--------------------------------------------------------------------------
 | For Product
 |--------------------------------------------------------------------------
 */
->>>>>>> 6537550f33deb454d86e1d0c1474ac764bc13ecb
-
+ 
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
 
 Route::get('/products', array('before' => 'admincheck', 'uses' => 'ProductController@products'));

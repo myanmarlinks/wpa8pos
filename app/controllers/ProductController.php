@@ -6,10 +6,15 @@ class ProductController extends BaseController {
 	public function index() {
 		return View::make('product.index');
 	}
-
-	public function addproduct()
+ 	
+ 	public function addProduct()
 	{
-		 $product =new Addproducts;
+		return View::make('product.addProduct');
+	}
+
+	public function createProduct()
+	{
+		 $product =new product;
 				$product->product_name =Input::get('product_name');
 				$product->categories=Input::get('categories');
 				$product->suppliers =Input::get('suppliers');
@@ -24,7 +29,7 @@ class ProductController extends BaseController {
 				 return View::make('product.index');
        }
 
-    	public function products()
+   public function products()
 	{
 		return View::make('product.products');
 	}
