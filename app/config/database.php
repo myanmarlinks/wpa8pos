@@ -55,16 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'wpos',
+			'database'  => 'wpa8pos',
 			'username'  => 'root',
-<<<<<<< HEAD
- 
-			'password'  => '',
- 			 
- 
-=======
-			'password'  => 'root',
->>>>>>> d82a80386d004f02b480da72f9c5b8e9e4f98aaf
+			'password'  => 'sithu',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
