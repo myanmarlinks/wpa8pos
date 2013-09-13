@@ -40,28 +40,18 @@ Route::post('/register', 'WelcomeController@register');
 Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
-
-<<<<<<< HEAD
 Route::post('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@createProduct'));
 Route::get('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
-=======
 Route::get('/addproducts', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
->>>>>>> d82a80386d004f02b480da72f9c5b8e9e4f98aaf
 
 /*
 |--------------------------------------------------------------------------
 | For Product
 |--------------------------------------------------------------------------
 */
-<<<<<<< HEAD
- 
-=======
 
 
->>>>>>> d82a80386d004f02b480da72f9c5b8e9e4f98aaf
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
-
-Route::get('/products', array('before' => 'admincheck', 'uses' => 'ProductController@products'));
 
 /*
 |--------------------------------------------------------------------------

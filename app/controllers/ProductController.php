@@ -1,15 +1,15 @@
 <?php
- 
- 
 
 class ProductController extends BaseController {
 	public function index() {
-		return View::make('product.index');
+		$products = Product::all();
+		return View::make('product.all-products')
+					->with('products', $products);
 	}
  	
  	public function addProduct()
 	{
-		return View::make('product.addProduct');
+		return View::make('product.addproduct');
 	}
 
 	public function createProduct()

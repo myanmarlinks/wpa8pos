@@ -137,6 +137,9 @@
                   <td><a href="#" class="show.bs.modal">delete</a></td>
                 </tr>
               </table>
+              @else
+                <h1>No Data</h1>
+              @endif
             </div>
             <div class="text-center">
               <ul class="pagination pagination-sm text-center">
