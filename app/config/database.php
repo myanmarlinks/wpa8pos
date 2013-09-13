@@ -56,13 +56,8 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'wpa8pos',
-<<<<<<< HEAD
 			'username'  => 'root', 
 			'password'  => 'mmlinks',
-=======
-			'username'  => 'root',
-			'password'  => 'sithu',
->>>>>>> 30a88b291c40a6acb5028b3e3e6df7bbd2599216
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

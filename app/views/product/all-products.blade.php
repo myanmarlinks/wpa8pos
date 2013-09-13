@@ -8,6 +8,7 @@
               <!-- Default panel contents -->
               <div class="panel-heading">Products</div>
               <!-- Table -->
+              @if(count($products) > 0)
               <table class="table">
                 <tr class="page-header">
                   <th><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></th>
