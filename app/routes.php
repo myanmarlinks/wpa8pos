@@ -40,17 +40,36 @@ Route::post('/register', 'WelcomeController@register');
 Route::get('/', array('before' => 'sauth', 'uses' => 'MainController@index'));
 Route::get('/logout', 'MainController@logout');
 
+<<<<<<< HEAD
 Route::post('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@createProduct'));
 Route::get('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 Route::get('/addproducts', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
+=======
+
+
+Route::post('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@createProduct'));
+Route::get('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
+
+Route::get('/addproducts', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
+
+>>>>>>> 30a88b291c40a6acb5028b3e3e6df7bbd2599216
 
 /*
 |--------------------------------------------------------------------------
 | For Product
 |--------------------------------------------------------------------------
 */
+<<<<<<< HEAD
 
 
+=======
+
+ 
+
+
+
+
+>>>>>>> 30a88b291c40a6acb5028b3e3e6df7bbd2599216
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
 
 /*
@@ -84,4 +103,16 @@ Route::get('/all-staffs', array('before' => 'admincheck', 'uses' => 'UserControl
 Route::get('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@staff'));
 Route::post('/add-staff', array('before' => 'admincheck', 'uses' => 'UserController@addStaff'));
 
+/*
+|--------------------------------------------------------------------------
+| For Employee
+|--------------------------------------------------------------------------
+*/
+Route::get('/employees', array('as' => 'employees', 'uses' => 'EmployeeController@index'));
+Route::get('/employees/create', array('as' => 'create-employee', 'uses' => 'EmployeeController@create'));
+Route::get('/employees/{id}/destroy', array('as' => 'destroy-employee', 'uses' => 'EmployeeController@destroy'));
+Route::get('/employees/{id}/edit', array('as' => 'edit-employee', 'uses' => 'EmployeeController@edit'));
+Route::get('/employees/{id}', array('as' => 'show-employee', 'uses' => 'EmployeeController@show'));
+Route::post('/employees/store','EmployeeController@store');
+Route::put('/employees/update','EmployeeController@update');
 

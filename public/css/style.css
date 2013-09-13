@@ -153,15 +153,30 @@ body {
 }
 /* End Flash Message 
 ================== */
-<<<<<<< HEAD
+
 #staff_list_body {
     margin-top: 5px;
 }
 
-=======
+
 
 
 /* Start Product */
 
+
+
+/*******************For Employee*******************/
+.errors{
+    color: red;
+    font-style: italic;
+}
+
+.must-fill{
+    color: red;
+}
+
+ul li {
+    list-style: none;
+}
  
->>>>>>> 6b4d9e609dbbef0a5295d7395eff10fe359d16e8
+
