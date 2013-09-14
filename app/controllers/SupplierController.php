@@ -1,6 +1,13 @@
 <?php 
 
 class SupplierController extends BaseController {
+	public function index() {
+		$suppliers = Supplier::paginate(2);
+		return View::make('supplier.suppliers')
+					->with('suppliers', $suppliers);
+	}
+
+
 	public function addSupplier()
 	{
 		return View::make('supplier.addsupplier');
@@ -23,7 +30,7 @@ class SupplierController extends BaseController {
 			$supplier->first_name= Input::get('first_name');
 			$supplier->last_name = Input::get('last_name');
 			$supplier->email = Input::get('email');
-			$supplier->phone_no = Input::get('phone_no');
+			$supplier->phone_number = Input::get('phone_number');
 			$supplier->address_1 = Input::get('address_1');
 			$supplier->address_2 = Input::get('address_2'); 
 			$supplier->city = Input::get('city');

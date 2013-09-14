@@ -53,7 +53,6 @@ Route::post('/add-product', array('before' => 'admincheck', 'uses' => 'ProductCo
 Route::get('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
 
-
 /*
 |--------------------------------------------------------------------------
 | For Customer
@@ -72,7 +71,7 @@ Route::get('/all-customers', 'CustomerController@allCustomers');
 
 Route::get('/add-supplier', array('before' => 'admincheck', 'uses' => 'SupplierController@addSupplier'));
 Route::post('/add-supplier', array('before' => 'admincheck', 'uses' =>  'SupplierController@createSupplier'));
-Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@allSuppliers'));
+Route::get('/all-suppliers', array('before' => 'admincheck', 'uses' => 'SupplierController@index'));
 
 /*
 |--------------------------------------------------------------------------
