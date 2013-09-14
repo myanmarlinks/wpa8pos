@@ -3,9 +3,9 @@
 	<div class="container">
     	<div class="row">
       		<div id="slider">
-            <div class="panel panel-default">
+            <div class="panel panel-default top">
               <!-- Default panel contents -->
-              <div class="panel-heading">Products</div>
+              <div class="panel-heading" >Products</div>
               <!-- Table -->
               @if(count($products) > 0)
              
