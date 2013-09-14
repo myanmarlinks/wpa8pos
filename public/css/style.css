@@ -31,6 +31,9 @@ body {
     background-color: #c051c7;
     color: #fff;
 }
+.panel-heading{
+    margin-top: 29px;
+}
 
 #breadcrumb {
     margin-top: -20px; 
