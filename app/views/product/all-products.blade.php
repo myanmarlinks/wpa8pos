@@ -41,21 +41,20 @@
                 </tr>
                 @endforeach
                </table>
-               
+              
               @else
                 <h1>No Data</h1>
               @endif
+
             </div>
             <div class="text-center">
-              <ul class="pagination pagination-sm text-center">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
+              {{ $products->links(); }}
+             <!-- <ul class="pagination pagination-sm"> -->
+                <!-- <li></li> -->
+                <!-- <li><a href="#">&laquo;</a></li> -->
+                <!-- <li></li> -->
+                <!-- <li><a href="#">&raquo;</a></li> -->
+              <!-- </ul> -->
             </div>
         	</div>
         </div>

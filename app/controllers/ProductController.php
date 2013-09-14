@@ -2,11 +2,12 @@
 
 class ProductController extends BaseController {
 	public function index() {
-		$products = Product::all();
+		$products = Product::paginate(2);
 		return View::make('product.all-products')
 					->with('products', $products);
+
 	}
- 	
+	
  	public function addProduct()
 	{
 		return View::make('product.addproduct');

@@ -53,6 +53,7 @@ Route::post('/add-product', array('before' => 'admincheck', 'uses' => 'ProductCo
 Route::get('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
 
+
 /*
 |--------------------------------------------------------------------------
 | For Customer
