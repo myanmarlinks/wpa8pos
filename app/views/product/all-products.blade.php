@@ -26,7 +26,7 @@
                 </tr>
                 @foreach ($products as $product)
                 <tr>
-                  <td><input type="checkbox" class="checkbox.inline" name="vehicle" value=""></td>
+                  <td><input type="checkbox" class="checkbox.inline" name="checkbox" value=""></td>
                  
                   <td>{{ $product->id }}</td>
                   <td>{{ $product->product_name }}</td>
@@ -36,8 +36,10 @@
                   <td>{{ $product->unit_price }}</td>
                   <td>{{ $product->quantity}}</td>
                   <td>{{ $product->reorder_level }}</td>
-                  <td><a href={{ $product->id }} class="show.bs.modal">edit</a></td>
-                  <td><a href={{ $product->id }} class="show.bs.modal">delete</a></td>
+                  <td>
+                    <a href="././edit-product/{{ $product->id }}" class="show.bs.modal">edit</a>
+                  </td>
+                  <td><a href="././delete-product/{{ $product->id }}" class="show.bs.modal">delete</a></td>
                 </tr>
                 @endforeach
                </table>

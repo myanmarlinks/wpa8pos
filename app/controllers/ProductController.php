@@ -7,6 +7,35 @@ class ProductController extends BaseController {
 					->with('products', $products);
 
 	}
+
+	public function editProduct($id){
+		$products = Product::find($id);
+		if ($products == null){
+			echo 'no data';
+		}else{
+			// dd($products->toArray());
+			return View::make('product.edit-product')
+							 ->with('products', $products);
+		}
+	}
+
+
+	public function updateProduct($id){
+		$products = Product::find($id);
+		$products->product_name =Input::get('product_name');
+		$products->categories=Input::get('categories');
+		$products->suppliers =Input::get('suppliers');
+		$products->cost_price =Input::get('cost_price');
+		$products->unit_price =Input::get('unit_price');
+		$products->quantity =Input::get('quantity');
+		$products->reorder_level =Input::get('reorder_level'); 
+		$products->location =Input::get('location');
+		$products->description =Input::get('description');
+		$products->save();
+		
+		return Redirect::to('all-products');
+		
+	}
 	
  	public function addProduct()
 	{
@@ -33,6 +62,12 @@ class ProductController extends BaseController {
    public function products()
 	{
 		return View::make('product.products');
+	}
+
+	public function deleteProduct($id){
+		$product = product::find($id);
+		$product->delete();	
+		return Redirect::to('all-products');
 	}
 
 

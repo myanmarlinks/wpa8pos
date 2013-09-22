@@ -48,10 +48,12 @@ Route::get('/logout', 'MainController@logout');
 |--------------------------------------------------------------------------
 */
 
-
 Route::post('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@createProduct'));
 Route::get('/add-product', array('before' => 'admincheck', 'uses' => 'ProductController@addProduct'));
 Route::get('/all-products', array('before' => 'admincheck', 'uses' => 'ProductController@index'));
+Route::get('/edit-product/{id?}', array('before' => 'admincheck', 'uses' =>'ProductController@editProduct'));
+Route::post('/edit-product/{id?}', array('before' => 'admincheck', 'uses' => 'ProductController@updateProduct'));
+Route::get('/delete-product/{id?}', array('before' => 'admincheck', 'uses' => 'ProductController@deleteProduct'));
 
 /*
 |--------------------------------------------------------------------------
